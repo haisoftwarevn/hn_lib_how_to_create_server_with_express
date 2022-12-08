@@ -1,0 +1,32 @@
+<ul>
+  <li>npm install ejs</li>
+  <li>npm install express</li>
+  <li>npm install body-parser</li>
+
+  <li>chú ý khi fetch phải có header</li>
+  <li>
+    <script>
+      fetch("http://localhost:3000/json", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({ id: "3", name: "Samsung" }),
+      })
+        .then((res) => res.json())
+        .then((friend) => {
+          console.log(friend);
+          alert(friend.body_id);
+        });
+
+      //   fetch("http://localhost:3000/json/22222", {
+      //     method: "GET",
+      //   })
+      //     .then((res) => res.json())
+      //     .then((friend) => {
+      //       console.log(friend);
+      //       alert(friend.params_id);
+      //     });
+    </script>
+  </li>
+</ul>
