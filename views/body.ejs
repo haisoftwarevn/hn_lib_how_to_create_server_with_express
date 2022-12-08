@@ -1,0 +1,17 @@
+<%- include("header")  -%>
+<ul>
+  <%  if(my.params_id) { %>
+    Hello! My Params ID is <%= my.params_id %>
+  <% } %>
+ 
+  <li>Nodejs</li>
+  <li>Reactjs</li>
+
+  <% if( my.body_id ){ %>
+
+    Hello! My Post Id is <%= my.body_id %> and my name is <%= my.body_name %>
+  <% } %>
+  
+</ul>
+
+<%- include("footer")  -%>
